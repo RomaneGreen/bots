@@ -9,11 +9,11 @@ class BotsController < ApplicationController
     end 
      
     def update 
-        @bot = Bot.find(params[:id])
+        @bot = Bot.find(params[:problem])
     end 
     
     def create 
-        @bot = Bot.new(params[:bots])
+        @bot = Bot.new(bot_params)
     end 
 
     def show

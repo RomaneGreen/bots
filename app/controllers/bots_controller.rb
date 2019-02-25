@@ -21,19 +21,13 @@ class BotsController < ApplicationController
         end
     end 
     
-    def create 
-        @bot = Bot.new(bot_params)
-    end 
-
-   
+    
 
     def destroy
         @bot = Bot.find(params[:id])
     end 
 
-    def edit
-        @bot = Bot.find(params[:id])
-    end 
+  
 
     private 
 

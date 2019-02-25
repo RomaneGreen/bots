@@ -2,3 +2,7 @@
 
 
 <%=@bot.name%>:  <%=@bot.problem%>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Edit", edit_bot_path %>
+<%= link_to "Destroy", bot_path(@bot), method: :delete, data: { confirm: 'Are you sure?' }%>

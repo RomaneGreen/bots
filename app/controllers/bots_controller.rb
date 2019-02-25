@@ -25,10 +25,13 @@ class BotsController < ApplicationController
 
     def destroy
         @bot = Bot.find(params[:id])
+        @bot.destroy
+        redirect_to root_path
     end 
 
-  
-
+  def edit
+    @bot = Bot.find(params[:id])
+  end
     private 
 
     def bot_params
